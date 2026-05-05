@@ -17,6 +17,8 @@ ${profileText || "General Adult (No declared allergies/intolerances)"}
 
 Please analyze the following product:
 ${textInput}
+
+CRITICAL INSTRUCTION: Your entire response MUST be a single, valid JSON object matching the requested schema exactly. Do not include ANY text, introduction, or markdown formatting outside of the JSON object. Return raw JSON only.
 `;
 
   const content: any[] = [];
