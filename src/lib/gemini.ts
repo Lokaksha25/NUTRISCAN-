@@ -33,7 +33,7 @@ ${textInput}
   parts.push({ text: fullPrompt });
 
   const response = await ai.models.generateContent({
-    model: "gemini-3.1-pro-preview", // using pro for complex reasoning with images & safety
+    model: "gemini-1.5-flash", // using flash to avoid rate limits and reduce cost
     contents: { parts },
     config: {
       systemInstruction: SYSTEM_PROMPT,
