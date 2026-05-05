@@ -64,7 +64,7 @@ ${textInput}
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({}));
     console.error("OpenRouter API Error:", errorData);
-    throw new Error(errorData.error?.message || \`API Error: \${response.status}\`);
+    throw new Error(errorData.error?.message || `API Error: ${response.status}`);
   }
 
   const data = await response.json();
