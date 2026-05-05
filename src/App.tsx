@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useMemo } from "react";
 import Markdown from "react-markdown";
-import { scanFoodLabel } from "./lib/gemini";
+import { scanFoodLabel } from "./lib/groq";
 import { Shield, UploadCloud, FileText, Camera, Loader2, AlertCircle, Sun, Moon, CheckCircle, AlertTriangle, XCircle, Info, HeartPulse, Stethoscope, Carrot, ArrowRight, Plus, Trash2, Edit2 } from "lucide-react";
 
 interface HealthProfile {
