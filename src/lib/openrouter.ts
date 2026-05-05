@@ -45,7 +45,7 @@ ${textInput}
       "X-Title": "NutriScan", // Optional but recommended by OpenRouter
     },
     body: JSON.stringify({
-      model: "meta-llama/llama-3.2-90b-vision-instruct",
+      model: "meta-llama/llama-3.2-11b-vision-instruct",
       messages: [
         {
           role: "system",
